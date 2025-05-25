@@ -1,0 +1,23 @@
+<canvas id="deptChart"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+fetch('/api/employees/')
+  .then(res => res.json())
+  .then(data => {
+    const deptCount = {};
+    data.forEach(emp => {
+      deptCount[emp.department] = (deptCount[emp.department] || 0) + 1;
+    });
+
+    new Chart(document.getElementById('deptChart'), {
+      type: 'pie',
+      data: {
+        labels: Object.keys(deptCount),
+        datasets: [{
+          data: Object.values(deptCount),
+          backgroundColor: ['red', 'blue', 'green', 'orange', 'purple']
+        }]
+      }
+    });
+  });
+</script>
