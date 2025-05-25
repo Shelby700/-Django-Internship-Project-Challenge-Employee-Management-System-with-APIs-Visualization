@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: ems-backend
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn employee_project.wsgi"
+    autoDeploy: true
+    envVars:
+      - key: DEBUG
+        value: "False"
+      - key: SECRET_KEY
+        value: YOUR_DJANGO_SECRET_KEY
+      - key: DATABASE_NAME
+        value: YOUR_DB_NAME
+      - key: DATABASE_USER
+        value: YOUR_DB_USER
+      - key: DATABASE_PASSWORD
+        value: YOUR_DB_PASSWORD
+      - key: DATABASE_HOST
+        value: YOUR_DB_HOST
+      - key: DATABASE_PORT
+        value: "5432"
+ 
