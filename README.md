@@ -67,7 +67,7 @@ employee_project/
 ├── docker-compose.yml
 ├── Dockerfile
 ├── manage.py
-├── project structure
+├── project_structure.txt
 ├── requirements.txt
 ├── render.yaml # Deployment configuration file for Render.com
 ├── README.md
