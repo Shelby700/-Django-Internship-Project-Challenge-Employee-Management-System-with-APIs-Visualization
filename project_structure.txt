@@ -1,1 +1,25 @@
-
+employee_project/
+│
+├── attendance/
+│ └── ...
+├── departments/
+│ └── ...
+├── employees/
+│ └── ...
+├── performance/
+│ └── ...
+├── employee_project/ # Django project settings folder
+│ ├── init.py
+│ ├── settings.py
+│ ├── urls.py
+│ ├── wsgi.py
+│ ├── asgi.py
+│ └── ...
+├── templates/
+│ └── ...
+├── manage.py
+├── requirements.txt
+├── docker-compose.yml
+├── Dockerfile
+├── render.yaml # Deployment configuration file for Render.com
+└── README.md
