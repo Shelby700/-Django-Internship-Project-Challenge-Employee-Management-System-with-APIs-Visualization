@@ -68,6 +68,7 @@ employee_project/
 ├── Dockerfile
 ├── manage.py
 ├── requirements.txt
+├── README.md
 ├── attendance/
 │   ├── admin.py
 │   ├── apps.py
